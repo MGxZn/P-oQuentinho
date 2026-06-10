@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Padaria</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+    <img src="PãoQuentinhologo.png" alt="Logo Pão Quentinho">
+    <span>Pão Quentinho</span>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="#doces">🍰 Doces</a></li>
+            <li><a href="#salgados">🥐 Salgados</a></li>
+            <li><a href="#encomendas">📦 Encomendas</a></li>
+            <li><a href="#contato">📞 Contato</a></li>
+            <li><a href="#conta">👤 Conta</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="destaque">
+    <h1>🥖 Pão Quentinho </h1>
+    <div class="status">Sistema Online • Recebendo Encomendas</div>
+
+    <div class="destaque-resumo">
+        <img src="PãoQuentinhologo.png" alt="Imagem da padaria">
+        <p>
+            Na Minha Padaria, a tradição e o sabor se encontram.
+        </p>
+    </div>
+
+    <div class="acoes">
+        <button>Fazer Encomenda</button>
+        <button>Ver Cardápio</button>
+    </div>
+</section>
+
+<section class="cardapio">
+    <h2>Cardápio</h2>
+
+    <img src="padaria02.png" alt="Produtos da padaria">
+
+    <h3 id="salgados">🥐 Lanches</h3>
+    <div class="card">
+        <div class="card-food"><h4>Lanche do Forno</h4><p>Pão artesanal, queijo e presunto.</p></div>
+        <div class="card-food"><h4>Lanche Clássico</h4><p>Receita tradicional da casa.</p></div>
+        <div class="card-food"><h4>Lanche Bacon & Queijo</h4><p>Bacon crocante e queijo especial.</p></div>
+    </div>
+
+    <h3 id="doces">🍽️ Refeições</h3>
+    <div class="card">
+        <div class="card-food"><h4>Frango Assado com Batatas</h4><p>Prato completo e saboroso.</p></div>
+        <div class="card-food"><h4>Feijoada</h4><p>Feijoada tradicional.</p></div>
+        <div class="card-food"><h4>Marmita Fit</h4><p>Opção saudável.</p></div>
+        <div class="card-food"><h4>Strogonoff de Carne</h4><p>Molho cremoso e arroz.</p></div>
+    </div>
+</section>
+
+<section class="formulario" id="encomendas">
+    <h2>📦 Faça sua Encomenda</h2>
+
+    <form onsubmit="alert('Encomenda enviada com sucesso!'); return false;">
+
+        <input
+            type="text"
+            placeholder="Nome Completo"
+            required
+            minlength="3"
+            maxlength="50"
+            title="Digite seu nome completo">
+
+        <input
+            type="email"
+            placeholder="E-mail"
+            required
+            title="Digite um e-mail válido">
+
+        <input
+            type="tel"
+            placeholder="Telefone (somente números)"
+            required
+            pattern="[0-9]{10,11}"
+            title="Digite apenas números com DDD">
+
+        <textarea
+            placeholder="Descreva seu pedido"
+            required
+            minlength="10"
+            maxlength="200"></textarea>
+
+        <button type="submit">Enviar Pedido</button>
+
+    </form>
+</section>
+<footer id="contato">
+    <p>© 2026 Padaria do Miguel - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
